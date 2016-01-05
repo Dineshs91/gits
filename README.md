@@ -1,4 +1,5 @@
 # gits
+(Pronounced as git-yes)
 Get out of apocalypse
 
 ## Undo a git rebase
