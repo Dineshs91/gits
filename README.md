@@ -28,3 +28,4 @@ try merging with ```--no-ff``` argument, which will force git to add a merge com
     git merge test --no-ff
     
 Or you can use git reflog to go back to the previous sane action and do merge again with ```--no-ff``` argument.
+[See](https://github.com/Dineshs91/gits#undo-a-git-rebase) this for more information.
