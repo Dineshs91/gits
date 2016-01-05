@@ -37,3 +37,24 @@ Try git's bisect functionality.
 
     git bisect
     
+## Modify the commit message of a specific commit
+
+    git rebase -i head~2
+    
+Display interactive rebase for the last 2 commits from head. Choose the number based on where your commit
+lies from head. If it is the 10th commit, choose head~10.
+You will get something like below
+
+    pick <sha> <commit message>
+    pick <sha> <commit message>
+    
+Change the command to edit correspoding to the commit which you want to modify
+
+    pick <sha> <commit message>
+    edit <sha> <commit message>
+    
+Save and the rebase will stop at the 2nd commit. You can amend the commit to change the
+commit message. Do git rebase --continue to finish the rebase.
+
+    git commit --amend
+    git rebase --continue
