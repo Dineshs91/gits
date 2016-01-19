@@ -3,7 +3,7 @@
 Get out of apocalypse
 
 ## Undo a git rebase
-[Answer](http://stackoverflow.com/a/135614/2134124)
+[Answer by Charles Bailey](http://stackoverflow.com/a/135614/2134124)
 
 Do git reflog and find the point where you want to go. (Ex: HEAD@{10})
 You will find something like the below in ```git reflog```
@@ -64,7 +64,7 @@ commit message. Do git rebase --continue to finish the rebase.
 
 You have made a commit, but now you want to modify somethings that went into that commit.
 
-[Answer](http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit/927386#927386)
+[Answer by Esko Luontola](http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit/927386#927386)
 
     git reset --soft HEAD~1
     
