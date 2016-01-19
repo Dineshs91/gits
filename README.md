@@ -69,3 +69,10 @@ You have made a commit, but now you want to modify somethings that went into tha
     git reset --soft HEAD~1
     
 This will remove the commit, but the changes will be staged.
+
+## Discard all unstaged changes
+
+[Answer by Greg Hewgill](http://stackoverflow.com/a/52719/2134124)
+
+    git stash save --keep-index
+    git stash drop
