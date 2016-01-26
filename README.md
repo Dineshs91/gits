@@ -2,6 +2,10 @@
 (Pronounced as git-yes)
 Get out of apocalypse
 
+## Note: 
+In most of the scenarios it is assumed that the commits are not pushed to origin (remote) yet. 
+If you are going to do force push to origin, please know the consequences of it before going ahead.
+
 ## Undo a git rebase
 [Answer by Charles Bailey](http://stackoverflow.com/a/135614/2134124)
 
