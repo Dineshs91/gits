@@ -62,7 +62,7 @@ commit message. Do git rebase --continue to finish the rebase.
 
 ## Revert last commit
 
-You have made a commit, but now you want to modify somethings that went into that commit.
+You have made a commit, but now you want to modify some changes that went into that commit.
 
 [Answer by Esko Luontola](http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit/927386#927386)
 
