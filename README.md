@@ -80,3 +80,25 @@ This will remove the commit, but the changes will be staged.
 
     git stash save --keep-index
     git stash drop
+
+## Recover a dropped stash
+
+[Answer by Aristotle Pagaltzis](http://stackoverflow.com/questions/89332/how-to-recover-a-dropped-stash-in-git/91795#91795)
+
+You have dropped a stash, but now you want it back.
+If you know the hash of the dropped stash you can do the below.
+
+    git stash apply $stash_hash
+
+When you drop a stash, a hash of it is printed to the screen. If you haven't closed your terminal, you
+can locate it by scrolling to the top. If you can't find it, execute the below command.
+
+    gitk --all $( git fsck --no-reflog | awk '/dangling commit/ {print $3}' )
+
+This will open gitk (git gui). To spot stash commits, look for commit messages of this form:
+
+    WIP on somebranch: commithash Some old commit message
+
+Once you know the hash of the commit you want, you can apply it as a stash
+
+    git stash apply $stash_hash
