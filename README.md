@@ -102,3 +102,13 @@ This will open gitk (git gui). To spot stash commits, look for commit messages o
 Once you know the hash of the commit you want, you can apply it as a stash
 
     git stash apply $stash_hash
+
+## Copy a file from one branch to another branch.
+
+[Answer by Madlep](http://stackoverflow.com/a/307872/2134124)
+
+If you want to copy an entire file from one branch into another branch, do the below
+
+    git checkout bugfix README.md
+    
+Execute the above command from the branch, where you want the file to be copied.
