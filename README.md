@@ -118,3 +118,13 @@ Execute the above command from the branch, where you want the file to be copied.
 If you want to review the changes done in a particular commit.
 
     git show <sha>
+
+## Revert changes to a particular file using commit hash.
+
+[Answer by mgalgs](http://stackoverflow.com/a/7196615/2134124)
+
+Say you committed changes of 2 files. Now you want to revert the changes of one of the files.
+
+    git show <sha> -- some_file.c | git apply -R
+    
+This command will undo the changes, but these are not staged. So you have to add and commit these.
