@@ -112,3 +112,9 @@ If you want to copy an entire file from one branch into another branch, do the b
     git checkout bugfix README.md
     
 Execute the above command from the branch, where you want the file to be copied.
+
+## Display the changes in a particular commit
+
+If you want to review the changes done in a particular commit.
+
+    git show <sha>
