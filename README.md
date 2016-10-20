@@ -128,3 +128,16 @@ Say you committed changes of 2 files. Now you want to revert the changes of one 
     git show <sha> -- some_file.c | git apply -R
     
 This command will undo the changes, but these are not staged. So you have to add and commit these.
+
+
+## Get the no of commits (Commit count)
+
+[Answer by Benjamin Atkin](http://stackoverflow.com/a/4061706/2134124)
+
+To get the count for a specific revision
+
+    git rev-list --count <revision>
+    
+To get the count across all branches
+
+    git rev-list --all --count
