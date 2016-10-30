@@ -141,3 +141,7 @@ To get the count for a specific revision
 To get the count across all branches
 
     git rev-list --all --count
+
+## Revert a specific commit
+
+    git revert <sha>
