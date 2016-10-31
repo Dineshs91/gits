@@ -145,3 +145,9 @@ To get the count across all branches
 ## Revert a specific commit
 
     git revert <sha>
+
+## Push the branch that is currently checked out.
+
+    git push origin HEAD
+    
+This is easy since we don't have type the entire branch name.
