@@ -151,3 +151,11 @@ To get the count across all branches
     git push origin HEAD
     
 This is easy since we don't have type the entire branch name.
+
+## Update remote branch information
+
+[Answer by Jakub Narębski](https://stackoverflow.com/a/3994587/2134124)
+
+    git remote prune <remotename>
+    
+Use the above command to delete all stale remote-tracking branches for a given remote (i.e. those that follow branches which were removed in remote repository)
