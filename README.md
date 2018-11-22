@@ -159,3 +159,15 @@ This is easy since we don't have type the entire branch name.
     git remote prune <remotename>
     
 Use the above command to delete all stale remote-tracking branches for a given remote (i.e. those that follow branches which were removed in remote repository)
+
+## Rename a local branch
+
+[Answer by siride](https://stackoverflow.com/a/6591218/2134124)
+
+If you want to rename a branch while pointed to any branch, do:
+
+    git branch -m <oldname> <newname>
+    
+If you want to rename the current branch, you can do:
+
+    git branch -m <newname>
